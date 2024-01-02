@@ -16,6 +16,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/about-page/about-page.component').then(c => c.AboutPageComponent)
   },
   {
+    path: 'angular-profile',
+    loadComponent: () => import('./pages/angular-git-hub-page/angular-git-hub-page.component').then(c => c.AngularGitHubPageComponent)
+  },
+  {
     path: '404',
     component: NotFoundPageComponent,
   },
