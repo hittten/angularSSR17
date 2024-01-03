@@ -14,5 +14,5 @@ import {AsyncPipe, JsonPipe} from "@angular/common";
 })
 export class AngularGitHubPageComponent {
   private http = inject(HttpClient)
-  data = this.http.get("https://api.github.com/users/angular");
+  profile$ = this.http.get("https://api.github.com/users/angular");
 }
